@@ -14,5 +14,17 @@ def principal():
 # def principal():
 #     return render_template('/tienda.html')
 # # ejecutar
+
+@app.route('/tienda')
+# llamar a contacto.html a la ruta seucndaria
+def login():
+    return render_template('/tienda.html')
+
+@app.route('/historial')
+# llamar a contacto.html a la ruta seucndaria
+def historial():
+     return render_template('/historial.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
